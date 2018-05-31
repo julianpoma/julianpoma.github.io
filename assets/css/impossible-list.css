@@ -1,0 +1,20 @@
+.main {
+  padding-top: 50px;
+}
+
+.il {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+ul, li {
+  padding-bottom: 8px;  
+}
+
+ul.nav-item, li.nav-item {
+  padding-bottom: 0px;
+}
+
+h2 {
+  padding-bottom: 8px;
+}
