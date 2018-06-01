@@ -1,15 +1,15 @@
 .main {
   padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.null {
+  padding: 5px;
 }
 
 .italic {
   text-align: center;
   font-style: italic;
-}
-
-.il {
-  padding-top: 30px;
-  padding-bottom: 50px;
 }
 
 ul, li {
