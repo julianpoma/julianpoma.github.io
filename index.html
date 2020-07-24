@@ -1,81 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/app.css">
-    <title>Julian Poma</title>
-</head>
-<body class="antialiased text-black">
-    <nav class="bg-grey-lighter">
-        <div class="w-3/4 m-auto md:min-w-md md:max-w-md py-5 flex flex-col md:flex-row items-center justify-between">
-            <h1 class="tracking-wide text-lg mb-3 md:mb-0">JULIAN POMA</h1>
-            <ul class="list-reset flex flex-col md:flex-row">
-                <a href="https://github.com/julianpoma" class="mr-6">Github</a>
-                <a href="assets/Julian_Poma_Resume_CV.pdf">Resume</a>
-            </ul>
-        </div>
-    </nav>
-    <div class="w-3/4 m-auto md:min-w-md md:max-w-md py-5">
-        <div class="text-center">
-            <img src="assets/selfie.jpeg" class="rounded-full mt-4 mb-6" alt="My Profile Picture">
-        </div>
-        <h1 class="title">
-            <span aria-hidden="true">#</span>
-            It's nice to meet you
-        </h1>
-        <p class="markdown">
-            I am a Software Engineer and Full Stack Web Developer from Argentina. I have experience working with Laravel, NodeJS and VueJS.
-            I love being surrounded by great people, and working on projects that have the chance to make an impact.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Julian Poma | Software Engineer</title>
+  </head>
+  <body class="antialiased bg-gray-900 text-gray-200">
+    <div class="max-w-screen-sm mx-auto px-4 py-8">
+      <img
+        class="h-40 w-40 mb-2 rounded-full mx-auto border-solid border-indigo-500 border-2"
+        src="me.jpeg"
+        alt="profile_picture"
+      />
+      <div class="w-64 mx-auto mb-8 text-center">
+        <h1 class="text-3xl">Julian Poma</h1>
+        <p class="text-gray-400">
+          Hey! I'm a Software Engineer at
+          <a class="font-bold hover:text-indigo-500" href="https://publica.la/en/" target="_blank">publica.la</a> and
+          aviation enthusiast.
         </p>
-
-        <h1 class="title">
-            <span aria-hidden="true">#</span>
-            Three facts about me
-        </h1>
-        <ol class="markdown">
-            <li>I don't like coffee. I drink <a class="markdown"  href="https://en.wikipedia.org/wiki/Mate_(drink)">mate</a>.</li>
-            <li>I like reading about <a class="markdown" href="https://jamesclear.com/atomic-habits">productivity</a> and <a class="markdown" href="http://calnewport.com/books/deep-work/">self-improvment</a>.</li>
-            <li>My ultimate dream is to get a <a class="markdown" href="https://www.faa.gov/pilots/become/">PPL</a>.</li>
-        </ol>
-
-        <h1 class="title">
-            <span aria-hidden="true">#</span>
-            Life Long Learning
-        </h1>
-        <p class="markdown">
-            That's my philosophy. Lately, I have been really into learning about distributed systems and load balancing.
-            Algorithms are pretty cool, too.
-            <br><br>
-            On my free time, I work on personal projects. You can check them out at my <a class="markdown" href="https://www.github.com/julianpoma">Github profile</a>
-        </p>
-
-        <h1 class="title">
-            <span aria-hidden="true">#</span>
-            I can't find you on Twitter
-        </h1>
-        <p class="markdown">
-            Two years ago <a class="markdown" href="https://www.youtube.com/watch?v=3E7hkPZ-HTk">I decided to quit social media</a>, and It's one of the best decisions I ever made. 
-            Now, I can put my time on the things that really matter: Family, Work, Aviation and Relax.
-            <br><br>
-            Don't worry, we can still get in touch.
-        </p>
-
-        <h1 class="title">
-            <span aria-hidden="true">#</span>
-            Alternatives to smoke signals
-        </h1>
-        <ul class="markdown">
-            <li><a class="markdown" href="mailto:julianepoma@gmail.com" target="_blank">Email</a></li>
-            <li><a class="markdown" href="https://www.linkedin.com/in/julianpoma" target="_blank">LinkedIn</a></li>
-            <li><a class="markdown" href="https://github.com/julianpoma" target="_blank">GitHub</a></li>
-            <li><a class="markdown" href="assets/Julian_Poma_Resume_CV.pdf" target="_blank">Resume</a></li>
+      </div>
+      <div class="w-56 mx-auto mb-4 text-center">
+        <h2 class="text-2xl">Interesting stuff</h2>
+        <ul>
+          <li class="py-2">
+            <button
+              id="book-notes-btn"
+              class="w-56 px-4 py-2 rounded border-solid border-indigo-500 border-2 hover:bg-indigo-500"
+            >
+              Book notes
+            </button>
+          </li>
+          <ul id="book-notes" class="hidden">
+            <li class="py-2">
+              <a
+                class="block px-4 py-2 rounded border-solid border-teal-600 border-2 hover:bg-teal-600"
+                href="https://www.notion.so/julianpoma/Hyperfocus-422b41727da04bb39940ec188163ff25"
+                target="_blank"
+              >
+                Hyperfocus
+              </a>
+            </li>
+          </ul>
+          <li class="py-2">
+            <button
+              id="projects-btn"
+              class="w-56 px-4 py-2 rounded border-solid border-indigo-500 border-2 hover:bg-indigo-500"
+            >
+              Projects
+            </button>
+          </li>
+          <ul id="projects-list" class="hidden">
+            <li class="py-2">
+              <a
+                class="block px-4 py-2 rounded border-solid border-teal-600 border-2 hover:bg-teal-600"
+                href="https://github.com/julianpoma/sleepytime"
+                target="_blank"
+              >
+                Sleepyti.me App
+              </a>
+            </li>
+            <li class="py-2">
+              <a
+                class="block px-4 py-2 rounded border-solid border-teal-600 border-2 hover:bg-teal-600"
+                href="https://github.com/julianpoma/rn-pw-generator"
+                target="_blank"
+              >
+                Password generator
+              </a>
+            </li>
+          </ul>
         </ul>
+      </div>
+      <div class="w-56 mx-auto text-center">
+        <h2 class="text-2xl">Links</h2>
+        <ul>
+          <li class="py-2">
+            <a
+              class="block mx-auto px-4 py-2 rounded border-solid border-teal-600 border-2 hover:bg-teal-600"
+              href="mailto:julianepoma@gmail.com"
+              target="_blank"
+            >
+              Email
+            </a>
+          </li>
+          <li class="py-2">
+            <a
+              class="block mx-auto px-4 py-2 rounded border-solid border-teal-600 border-2 hover:bg-teal-600"
+              href="https://github.com/julianpoma"
+              target="_blank"
+            >
+              Github
+            </a>
+          </li>
+          <li class="py-2">
+            <a
+              class="block w-56 mx-auto px-4 py-2 rounded border-solid border-teal-600 border-2 hover:bg-teal-600"
+              href="https://www.goodreads.com/user/show/106203945-neucoasju"
+              target="_blank"
+            >
+              Goodreads
+            </a>
+          </li>
+          <li class="py-2">
+            <a
+              class="block w-56 mx-auto px-4 py-2 rounded border-solid border-teal-600 border-2 hover:bg-teal-600"
+              href="https://www.linkedin.com/in/julianpoma/"
+              target="_blank"
+            >
+              Linkedin
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <footer class="w-3/4 mx-auto md:min-w-md md:max-w-md my-12 text-center">
-        <p class="text-xs text-grey">This is the V2 of my personal website • Julian Poma 2020</p>
-    </footer>
-</body>
+    <script src="toggl.js"></script>
+  </body>
 </html>
